@@ -13,6 +13,7 @@ function setup() {
 function draw() {
   background("black");  
   car.velocityX=speed
+  collision()
   speed=Math.round(random(55,90))
   weight=Math.round(random(400,1500))
   deformation=0.5*weight*speed*speed/22500
